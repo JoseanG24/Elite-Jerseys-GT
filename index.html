@@ -691,8 +691,8 @@
       #navbar, #navbar.scrolled { padding:14px 20px; }
 
       /* hero */
-      #hero { min-height:100svh; align-items:flex-end; padding-bottom:60px; }
-      .hero-content { padding:100px 20px 0; }
+      #hero { min-height:100svh; align-items:flex-start; padding-top:120px; padding-bottom:0; }
+      .hero-content { padding:0 20px; }
       .hero-title { font-size:clamp(52px,14vw,80px); }
       .hero-eyebrow { margin-bottom:20px; }
       .hero-sub { font-size:14px; max-width:100%; margin-top:18px; }
@@ -716,6 +716,26 @@
       .collection-name  { font-size:32px; }
       #collections { padding:64px 20px; }
       #collections > div:first-child { position:static; padding:0 0 32px; }
+
+      /* collections title centered */
+      #collections-title {
+        position:static !important;
+        text-align:center;
+        margin-bottom:40px;
+        top:auto !important;
+        left:auto !important;
+        z-index:auto !important;
+      }
+      #collections-title .section-label {
+        justify-content:center;
+        margin-bottom:20px;
+      }
+      #collections-title .section-label::before {
+        display:none;
+      }
+      #collections-title .section-label span {
+        margin-left:0;
+      }
 
       /* stats */
       .stats-grid  { grid-template-columns:repeat(2,1fr); margin-top:40px; }
